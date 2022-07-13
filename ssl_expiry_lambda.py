@@ -3,7 +3,7 @@ ssl_expriy_lambda uses the ssl_expiry script to allow you to check a list of
 SSL certificate expiration dates via AWS Gateway.
 """
 
-
+import boto3
 import json
 import logging
 import os
