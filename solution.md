@@ -1,5 +1,8 @@
-## SSL expiration check
-##  
+### SSL expiration check 
+### This function accepts an http request that hits an API gateway to call the lambda function to 
+### run the sll certificate check script which then can be ported to an S3 bucket, DB, or email     
+### notification
+### https://github.com/sthbkr77/SSL-expiry-check.git
 
 
 1. Create Lambda Function using the Author from scratch option. 
@@ -17,9 +20,11 @@
         Stage: default
 
 3. Add Destination. 
-    a. Presently testing with SNS notifications but could also add DynamoDB or an S3 bucket to archive results.
+    a. Presently testing with SNS notifications but could also add DynamoDB or an S3 bucket to      
+
+  archive results.
         
-4. Prepare Python envornment    
+4. Prepare Python environment    
     a.  $ conda env create -f environment.yml
         $ source activate ssl-expiry
 
