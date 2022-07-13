@@ -27,5 +27,7 @@
 4. Prepare Python environment    
     a.  $ conda env create -f environment.yml
         $ source activate ssl-expiry
+    b. script can be tested :
+    echo "fearless.com" | python ssl_expiry.py
+    
 
-5. 
